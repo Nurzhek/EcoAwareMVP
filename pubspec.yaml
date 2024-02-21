@@ -1,0 +1,279 @@
+name: myapp
+description: A exported flutter project from FUNCTION12
+
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  google_fonts: ^4.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/page-1/images/property-1invisible.png
+    - assets/page-1/images/right.png
+    - assets/page-1/images/left.png
+    - assets/page-1/images/cursor.png
+    - assets/page-1/images/right-pUv.png
+    - assets/page-1/images/left-2dc.png
+    - assets/page-1/images/ellipse-287.png
+    - assets/page-1/images/left-mHx.png
+    - assets/page-1/images/left-2oQ.png
+    - assets/page-1/images/left-BUa.png
+    - assets/page-1/images/image-1.png
+    - assets/page-1/images/cursor-9Kc.png
+    - assets/page-1/images/plus-DDg.png
+    - assets/page-1/images/auto-group-dwdk.png
+    - assets/page-1/images/left-Ekv.png
+    - assets/page-1/images/left-ePx.png
+    - assets/page-1/images/left-zzr.png
+    - assets/page-1/images/right-C8W.png
+    - assets/page-1/images/ellipse-286.png
+    - assets/page-1/images/right-ipW.png
+    - assets/page-1/images/cursor-qPL.png
+    - assets/page-1/images/quay-li.png
+    - assets/page-1/images/left-VJn.png
+    - assets/page-1/images/left-1K4.png
+    - assets/page-1/images/quay-li-wTc.png
+    - assets/page-1/images/auto-group-kq2w.png
+    - assets/page-1/images/right-agv.png
+    - assets/page-1/images/property-1visible.png
+    - assets/page-1/images/vector.png
+    - assets/page-1/images/left-3VG.png
+    - assets/page-1/images/right-Q4v.png
+    - assets/page-1/images/cursor-byx.png
+    - assets/page-1/images/right-Zze.png
+    - assets/page-1/images/cursor-29U.png
+    - assets/page-1/images/bell.png
+    - assets/page-1/images/home.png
+    - assets/page-1/images/px-googlecalendaricon2020-1.png
+    - assets/page-1/images/left-Fy8.png
+    - assets/page-1/images/cursor-oWn.png
+    - assets/page-1/images/right-rdt.png
+    - assets/page-1/images/right-vUe.png
+    - assets/page-1/images/right-X3k.png
+    - assets/page-1/images/button.png
+    - assets/page-1/images/farmer-using-smart-farm-application.png
+    - assets/page-1/images/calendar-overlay-button.png
+    - assets/page-1/images/quay-li-QZt.png
+    - assets/page-1/images/vector-YZc.png
+    - assets/page-1/images/home-r4W.png
+    - assets/page-1/images/stateon.png
+    - assets/page-1/images/iconex-light-search.png
+    - assets/page-1/images/line-3.png
+    - assets/page-1/images/vector-xgN.png
+    - assets/page-1/images/line-3-7ZG.png
+    - assets/page-1/images/image-1-Dee.png
+    - assets/page-1/images/right-Gmt.png
+    - assets/page-1/images/frame-2608820.png
+    - assets/page-1/images/right-Bdx.png
+    - assets/page-1/images/iconex-light-search-iza.png
+    - assets/page-1/images/plus.png
+    - assets/page-1/images/iconex-light-search-GFQ.png
+    - assets/page-1/images/ellipse-284.png
+    - assets/page-1/images/image-1-ki2.png
+    - assets/page-1/images/frame-2608820-PNE.png
+    - assets/page-1/images/home-cgE.png
+    - assets/page-1/images/right-H3c.png
+    - assets/page-1/images/ellipse-285.png
+    - assets/page-1/images/line-3-Nar.png
+    - assets/page-1/images/home-PXt.png
+    - assets/page-1/images/quay-li-HBL.png
+    - assets/page-1/images/statewait.png
+    - assets/page-1/images/left-VKt.png
+    - assets/page-1/images/iconex-light-search-yQi.png
+    - assets/page-1/images/frame-2608820-kCN.png
+    - assets/page-1/images/home-ujC.png
+    - assets/page-1/images/bell-m7c.png
+    - assets/page-1/images/book.png
+    - assets/page-1/images/group-29.png
+    - assets/page-1/images/plus-2LE.png
+    - assets/page-1/images/right-BNe.png
+    - assets/page-1/images/vector-mxr.png
+    - assets/page-1/images/button-iEi.png
+    - assets/page-1/images/vector-nDC.png
+    - assets/page-1/images/iconex-light-search-LXQ.png
+    - assets/page-1/images/iconex-light-search-d2W.png
+    - assets/page-1/images/auto-group-qn4v.png
+    - assets/page-1/images/bell-m5x.png
+    - assets/page-1/images/right-6NA.png
+    - assets/page-1/images/plus-ef8.png
+    - assets/page-1/images/vector-9Qr.png
+    - assets/page-1/images/book-T7k.png
+    - assets/page-1/images/book-P9p.png
+    - assets/page-1/images/group-367.png
+    - assets/page-1/images/book-o8r.png
+    - assets/page-1/images/plus-aGe.png
+    - assets/page-1/images/bell-jan.png
+    - assets/page-1/images/home-nii.png
+    - assets/page-1/images/bell-MVY.png
+    - assets/page-1/images/vector-scr.png
+    - assets/page-1/images/crop-monitoring-via-mobile-device-2.png
+    - assets/page-1/images/vector-oaE.png
+    - assets/page-1/images/bell-zo8.png
+    - assets/page-1/images/plus-YRk.png
+    - assets/page-1/images/book-akv.png
+    - assets/page-1/images/quay-li-dVY.png
+    - assets/page-1/images/quay-li-4ez.png
+    - assets/page-1/images/vector-GKx.png
+    - assets/page-1/images/garbage-recycle.png
+    - assets/page-1/images/ellipse-bg.png
+    - assets/page-1/images/calendar-overlay-button-LMt.png
+    - assets/page-1/images/frame-2608820-E4v.png
+    - assets/page-1/images/vector-SqC.png
+    - assets/page-1/images/frame-2608822.png
+    - assets/page-1/images/vector-aNA.png
+    - assets/page-1/images/book-rDC.png
+    - assets/page-1/images/vector-bwU.png
+    - assets/page-1/images/plus-NBY.png
+    - assets/page-1/images/ellipse-289.png
+    - assets/page-1/images/vector-WYe.png
+    - assets/page-1/images/vector-dRY.png
+    - assets/page-1/images/group-411.png
+    - assets/page-1/images/home-YaA.png
+    - assets/page-1/images/book-fPC.png
+    - assets/page-1/images/bell-35x.png
+    - assets/page-1/images/group-380.png
+    - assets/page-1/images/frame-2608828.png
+    - assets/page-1/images/ellipse-288.png
+    - assets/page-1/images/right-Vvv.png
+    - assets/page-1/images/home-xmL.png
+    - assets/page-1/images/garbage-recycle-PzE.png
+    - assets/page-1/images/rectangle.png
+    - assets/page-1/images/left-ALe.png
+    - assets/page-1/images/left-XKU.png
+    - assets/page-1/images/book-Sni.png
+    - assets/page-1/images/book-2JA.png
+    - assets/page-1/images/right-Dnv.png
+    - assets/page-1/images/right-4sQ.png
+    - assets/page-1/images/left-DVQ.png
+    - assets/page-1/images/vector-CUW.png
+    - assets/page-1/images/plus-2g6.png
+    - assets/page-1/images/ellipse.png
+    - assets/page-1/images/left-bSv.png
+    - assets/page-1/images/googlemeet-logo.png
+    - assets/page-1/images/vector-2iz.png
+    - assets/page-1/images/freepik-background-simple-inject-39.png
+    - assets/page-1/images/right-1ZY.png
+    - assets/page-1/images/image-1-fsU.png
+    - assets/page-1/images/freepik-background-simple-inject-39-YzS.png
+    - assets/page-1/images/right-cxv.png
+    - assets/page-1/images/home-YDc.png
+    - assets/page-1/images/bell-358.png
+    - assets/page-1/images/freepik-background-simple-inject-39-Y8v.png
+    - assets/page-1/images/plus-Pan.png
+    - assets/page-1/images/left-TUA.png
+    - assets/page-1/images/left-1NW.png
+    - assets/page-1/images/right-xaS.png
+    - assets/page-1/images/bell-ob4.png
+    - assets/page-1/images/right-8eA.png
+    - assets/page-1/images/left-u6v.png
+    - assets/page-1/images/gmail-logo.png
+    - assets/page-1/images/group-370.png
+    - assets/page-1/images/vector-kHk.png
+    - assets/page-1/images/frame-2608828-Age.png
+    - assets/page-1/images/image-1-J5C.png
+    - assets/page-1/images/frame-2608820-Pnv.png
+    - assets/page-1/images/bell-KeW.png
+    - assets/page-1/images/frame-2608823.png
+    - assets/page-1/images/frame-2608825.png
+    - assets/page-1/images/plus-crJ.png
+    - assets/page-1/images/home-Pev.png
+    - assets/page-1/images/frame-2608828-SKg.png
+    - assets/page-1/images/plus-Mpa.png
+    - assets/page-1/images/frame-2608826.png
+    - assets/page-1/images/vector-psx.png
+    - assets/page-1/images/book-n4e.png
+    - assets/page-1/images/book-Fu8.png
+    - assets/page-1/images/frame-2608822-ohg.png
+    - assets/page-1/images/home-m5G.png
+    - assets/page-1/images/frame-2608824.png
+    - assets/page-1/images/bell-w1x.png
+    - assets/page-1/images/frame-2608822-wie.png
+    - assets/page-1/images/ellipse-288-DQi.png
+    - assets/page-1/images/farmer-using-smart-farm-application-eUE.png
+    - assets/page-1/images/frame-2608827.png
+    - assets/page-1/images/vector-raJ.png
+    - assets/page-1/images/group-383.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

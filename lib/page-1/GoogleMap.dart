@@ -68,8 +68,8 @@ void handleLocationError(bool browserHasGeolocation, InfoWindow infoWindow, var 
   infoWindow.setPosition(pos);
   infoWindow.setContent(
     browserHasGeolocation
-      ? "Error: The Geolocation service failed."
-      : "Error: Your browser doesn't support geolocation."
+      ? "Error: The Geolocation service failed"
+      : "Error: Your browser doesn't support geolocation"
   );
   infoWindow.open(map);
 }

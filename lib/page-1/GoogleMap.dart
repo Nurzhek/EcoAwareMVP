@@ -43,3 +43,33 @@ class MapSampleState extends State<MapSample> {
     await controller.animateCamera(CameraUpdate.newCameraPosition(_kLake));
   }
 }
+void initMap() {
+  Geolocation geolocation = window.navigator.geolocation;
+  if (geolocation != null) {
+    geolocation.getCurrentPosition().then((Geoposition position) {
+      var pos = {
+        'lat': position.coords.latitude,
+        'lng': position.coords.longitude,
+      };
+      infoWindow.setPosition(pos);
+      infoWindow.setContent("Location found.");
+      infoWindow.open(map);
+      map.setCenter(pos);
+    }).catchError((e) {
+      handleLocationError(true, infoWindow, map.center);
+    });
+  } else {
+    // Browser doesn't support Geolocation
+    handleLocationError(false, infoWindow, map.center);
+  }
+}
+
+void handleLocationError(bool browserHasGeolocation, InfoWindow infoWindow, var pos) {
+  infoWindow.setPosition(pos);
+  infoWindow.setContent(
+    browserHasGeolocation
+      ? "Error: The Geolocation service failed."
+      : "Error: Your browser doesn't support geolocation."
+  );
+  infoWindow.open(map);
+}

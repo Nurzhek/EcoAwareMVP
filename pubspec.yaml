@@ -1,5 +1,5 @@
 name: myapp
-description: A exported flutter project from FUNCTION12
+description:
 
 
 # The following line prevents the package from being accidentally published to
@@ -38,6 +38,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   google_fonts: ^4.0.1
+  firebase_core: ^2.25.4
 
 dev_dependencies:
   flutter_test:

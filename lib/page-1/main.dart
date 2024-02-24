@@ -8,17 +8,7 @@ import 'firebase_options.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart'
 
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-  runApp(MyApp());
-}
-class Scene extends StatefulWidget {
-  @override
-  _SceneState createState() => _SceneState();
-}
+
 
 class _SceneState extends State<Scene> {
   GoogleMapController? mapController;
@@ -28,13 +18,7 @@ class _SceneState extends State<Scene> {
   }
   @override
   Widget build(BuildContext context) {
-    GoogleMap(
-      onMapCreated: _onMapCreated,
-      initialCameraPosition: CameraPosition(
-        target: LatLng(51.12, 71.44),
-        zoom: 10.0,
-      ),
-    ),
+
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;

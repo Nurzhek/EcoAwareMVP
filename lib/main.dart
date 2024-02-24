@@ -3,7 +3,9 @@ import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
-
+import 'package:google_maps_flutter/google_maps_flutter.dart'
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
 //import 'package:myapp/page-1/onboard01.dart';
 // import 'package:myapp/page-1/onboard01-Tv6.dart';
@@ -26,11 +28,30 @@ import 'package:myapp/page-1/registration.dart';
 // import 'package:myapp/page-1/calendar.dart';
 // import 'package:myapp/page-1/point.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(MyApp());
+}
 
-class MyApp extends StatelessWidget {
+class Scene extends StatefulWidget {
+  @override
+  _SceneState createState() => _SceneState();
+}
+
+class MyApp extends StatefulWidget {
+  GoogleMapController? mapController;
 	@override
 	Widget build(BuildContext context) {
+    GoogleMap(
+      onMapCreated: _onMapCreated,
+      initialCameraPosition: CameraPosition(
+        target: LatLng(51.12, 71.44),
+        zoom: 10.0,
+      ),
+    );,
 	return MaterialApp(
 		title: 'Flutter',
 		debugShowCheckedModeBanner: false,

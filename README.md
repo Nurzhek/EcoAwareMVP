@@ -1,6 +1,15 @@
-# ecoAwareMVP
+# EcoAware
 
 A new Flutter project created for Google Solution Challenge 2024. The EcoAware project is designed to promote sustainable lifestyle and build eco-community. Through features like eco-events , green event map, forum, the app empowers users to make eco-conscious choices and collaborate on initiatives for a greener future. By providing opportunity to connect like-minded individuals and to attract to participate in eco-events, it aims to inspire collective action towards environmental conservation.
+
+## Installation
+
+To run this project, you need to install Flutter framework to its latest version and run the following command in terminal
+
+```bash
+flutter run
+```
+
 ![tg_image_327599743](https://github.com/Nurzhek/EcoAwareMVP/assets/99636082/ad803d07-c695-40ce-90d7-3f712089175f)
 ![Profile](https://github.com/Nurzhek/EcoAwareMVP/assets/99636082/9b1969fb-59b5-4efd-95dd-0c798d694ee1)
 ![Profile (3)](https://github.com/Nurzhek/EcoAwareMVP/assets/99636082/bc2a9204-e921-4c6e-843f-8e0caa4ddd2e)

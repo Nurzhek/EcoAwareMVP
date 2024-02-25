@@ -4,11 +4,14 @@ A new Flutter project created for Google Solution Challenge 2024. The EcoAware p
 
 ## Installation
 
-To run this project, you need to install Flutter framework to its latest version and run the following command in terminal
-
+To run this project, you need to:
+* Install Flutter framework to its latest version. 
+* Run the following command in terminal:
 ```bash
 flutter run
 ```
+* Insert your Google Maps API Key, you can receive it from Google Maps Documentation.
+
 
 ## Visuals
 ![tg_image_327599743](https://github.com/Nurzhek/EcoAwareMVP/assets/99636082/ad803d07-c695-40ce-90d7-3f712089175f)

@@ -5,7 +5,11 @@ A new Flutter project created for Google Solution Challenge 2024. The EcoAware p
 ## Installation
 
 To run this project, you need to:
-* Install Flutter framework to its latest version. 
+* Install Flutter framework to its latest version.
+* Before running the app, get dependencies of the app by following command:
+```bash
+dart pub get
+```
 * Run the following command in terminal:
 ```bash
 flutter run

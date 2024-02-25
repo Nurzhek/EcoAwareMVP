@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:myapp/utils.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart'
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
@@ -30,40 +26,62 @@ import 'package:myapp/page-1/point.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-  runApp(MyApp());
+  await Firebase.initializeApp();
+  runApp(const MyApp());
 }
 
 class Scene extends StatefulWidget {
+  const Scene({Key? key}) : super(key: key);
+
   @override
   _SceneState createState() => _SceneState();
 }
 
-class MyApp extends StatefulWidget {
-  GoogleMapController? mapController;
-	@override
-	Widget build(BuildContext context) {
-    GoogleMap(
-      onMapCreated: _onMapCreated,
-      initialCameraPosition: CameraPosition(
-        target: LatLng(51.12, 71.44),
-        zoom: 10.0,
+class _SceneState extends State<Scene> {
+  late GoogleMapController mapController;
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      title: 'Flutter',
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: SingleChildScrollView(
+          child: Scene(),
+        ),
       ),
-    );,
-	return MaterialApp(
-		title: 'Flutter',
-		debugShowCheckedModeBanner: false,
-		scrollBehavior: MyCustomScrollBehavior(),
-		theme: ThemeData(
-		primarySwatch: Colors.blue,
-		),
-		home: Scaffold(
-		body: SingleChildScrollView(
-			child: Scene(),
-		),
-		),
-	);
-	}
+    );
+  }
+}
+
+class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  late GoogleMapController mapController;
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter',
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: SingleChildScrollView(
+          child: Scene(),
+        ),
+      ),
+    );
+  }
+}
+
+class CloudVisionScope {
+  // TODO: Implement methods and properties for CloudVisionScope class
+}
+
+class VisionApi {
+  // TODO: Implement methods and properties for VisionApi class
 }

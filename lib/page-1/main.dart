@@ -1,40 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:myapp/utils.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart'
 
 
-
-
-class _SceneState extends State<Scene> {
-  GoogleMapController? mapController;
-
-  void _onMapCreated(GoogleMapController controller) {
-    mapController = controller;
-  }
+class GoogleMapController {
+}
   @override
   Widget build(BuildContext context) {
 
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
+    double import;
     return Container(
       width: double.infinity,
       child: Container(
         // mainnaA (25:152)
         padding: EdgeInsets.fromLTRB(0*fem, 60*fem, 0*fem, 0*fem),
         width: double.infinity,
-        decoration: BoxDecoration (
+        decoration: const BoxDecoration (
           color: Color(0xffffffff),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
+            SizedBox(
               // autogroup3hui6qk (5ZomDS1thdt4JU1AMe3HUi)
               width: 922.55*fem,
               height: 359*fem,
@@ -48,7 +38,7 @@ class _SceneState extends State<Scene> {
                       padding: EdgeInsets.fromLTRB(25*fem, 10*fem, 16*fem, 10*fem),
                       width: 315*fem,
                       height: 54*fem,
-                      decoration: BoxDecoration (
+                      decoration: const BoxDecoration (
                         color: Color(0xffffffff),
                       ),
                       child: Row(
@@ -70,7 +60,7 @@ class _SceneState extends State<Scene> {
                             padding: EdgeInsets.fromLTRB(9.5*fem, 8*fem, 165.5*fem, 8*fem),
                             height: double.infinity,
                             decoration: BoxDecoration (
-                              color: Color(0xffffffff),
+                              color: const Color(0xffffffff),
                               borderRadius: BorderRadius.circular(5*fem),
                             ),
                             child: Row(
@@ -97,7 +87,7 @@ class _SceneState extends State<Scene> {
                                     fontWeight: FontWeight.w400,
                                     height: 1.5*ffem/fem,
                                     letterSpacing: 0.36*fem,
-                                    color: Color(0xffffffff),
+                                    color: const Color(0xffffffff),
                                   ),
                                 ),
                               ],
@@ -156,7 +146,7 @@ class _SceneState extends State<Scene> {
                             fontWeight: FontWeight.w700,
                             height: 0.9411764706*ffem/fem,
                             letterSpacing: 1.02*fem,
-                            color: Color(0xff263238),
+                            color: const Color(0xff263238),
                           ),
                         ),
                       ),
@@ -172,13 +162,13 @@ class _SceneState extends State<Scene> {
                       decoration: BoxDecoration (
                         boxShadow: [
                           BoxShadow(
-                            color: Color(0x11000000),
+                            color: const Color(0x11000000),
                             offset: Offset(4*fem, 0*fem),
                             blurRadius: 10*fem,
                           ),
                         ],
                       ),
-                      child: Container(
+                      child: SizedBox(
                         // frame2608821sYz (47:313)
                         width: double.infinity,
                         height: double.infinity,
@@ -191,7 +181,7 @@ class _SceneState extends State<Scene> {
                               width: 177*fem,
                               height: double.infinity,
                               decoration: BoxDecoration (
-                                color: Color(0xffffffff),
+                                color: const Color(0xffffffff),
                                 borderRadius: BorderRadius.circular(15*fem),
                               ),
                               child: Column(
@@ -208,7 +198,7 @@ class _SceneState extends State<Scene> {
                                         fontWeight: FontWeight.w500,
                                         height: 1.6*ffem/fem,
                                         letterSpacing: 0.6*fem,
-                                        color: Color(0xff263238),
+                                        color: const Color(0xff263238),
                                       ),
                                     ),
                                   ),
@@ -225,7 +215,7 @@ class _SceneState extends State<Scene> {
                                         fontWeight: FontWeight.w500,
                                         height: 1.8823529412*ffem/fem,
                                         letterSpacing: 0.51*fem,
-                                        color: Color(0xff263238),
+                                        color: const Color(0xff263238),
                                       ),
                                     ),
                                   ),
@@ -241,7 +231,7 @@ class _SceneState extends State<Scene> {
                               width: 177*fem,
                               height: double.infinity,
                               decoration: BoxDecoration (
-                                color: Color(0xffffffff),
+                                color: const Color(0xffffffff),
                                 borderRadius: BorderRadius.circular(15*fem),
                               ),
                               child: Column(
@@ -258,7 +248,7 @@ class _SceneState extends State<Scene> {
                                         fontWeight: FontWeight.w500,
                                         height: 1.6*ffem/fem,
                                         letterSpacing: 0.6*fem,
-                                        color: Color(0xff263238),
+                                        color: const Color(0xff263238),
                                       ),
                                     ),
                                   ),
@@ -275,202 +265,33 @@ class _SceneState extends State<Scene> {
                                         fontSize: 17*ffem,
                                         fontWeight: FontWeight.w500,
                                         height: 1.8823529412*ffem/fem,
-                                        letterSpacing: 0.51*fem,
-                                        color: Color(0xff263238),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            SizedBox(
-                              width: 20*fem,
-                            ),
-                            Container(
-                              // window31qY (47:312)
-                              padding: EdgeInsets.fromLTRB(17*fem, 18*fem, 0*fem, 151*fem),
-                              height: double.infinity,
-                              decoration: BoxDecoration (
-                                color: Color(0xffffffff),
-                                borderRadius: BorderRadius.circular(15*fem),
-                              ),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Container(
-                                    // eventname2Lcv (47:310)
-                                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 8*fem),
-                                    child: Text(
-                                      'Zero Waste',
-                                      style: SafeGoogleFont (
-                                        'SF Pro Display',
-                                        fontSize: 20*ffem,
-                                        fontWeight: FontWeight.w500,
-                                        height: 1.6*ffem/fem,
-                                        letterSpacing: 0.6*fem,
-                                        color: Color(0xff263238),
-                                      ),
-                                    ),
-                                  ),
-                                  Container(
-                                    // text2TxS (47:311)
-                                    margin: EdgeInsets.fromLTRB(8*fem, 0*fem, 0*fem, 0*fem),
-                                    child: Text(
-                                      'Competition among households to reduce waste generation',
-                                      style: SafeGoogleFont (
-                                        'SF Pro Display',
-                                        fontSize: 17*ffem,
-                                        fontWeight: FontWeight.w500,
-                                        height: 1.8823529412*ffem/fem,
-                                        letterSpacing: 0.51*fem,
-                                        color: Color(0xff263238),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              // autogroupyr3xBdY (5ZomvfLCAnQxzpvAKyYr3x)
-              padding: EdgeInsets.fromLTRB(19*fem, 31*fem, 0*fem, 8*fem),
-              width: double.infinity,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Container(
-                    // autogrouprbiwhrn (5Zomhasecjpnr1WSPYrBiW)
-                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 25.5*fem),
-                    width: 384.98*fem,
-                    height: 296.5*fem,
-                    child: Stack(
-                      children: [
-                        Positioned(
-                          // group378dEe (28:1884)
-                          left: 13*fem,
-                          top: 221*fem,
-                          child: Container(
-                            padding: EdgeInsets.fromLTRB(19*fem, 25*fem, 19*fem, 18.5*fem),
-                            width: 343*fem,
-                            height: 75.5*fem,
-                            decoration: BoxDecoration (
-                              color: Color(0xffffffff),
-                              borderRadius: BorderRadius.circular(15*fem),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Color(0x11000000),
-                                  offset: Offset(4*fem, 4*fem),
-                                  blurRadius: 10*fem,
-                                ),
-                              ],
-                            ),
-                            child: Text(
-                              'How to make a difference?',
-                              style: SafeGoogleFont (
-                                'SF Pro Display',
-                                fontSize: 20*ffem,
-                                fontWeight: FontWeight.w500,
-                                height: 1.6*ffem/fem,
-                                letterSpacing: 0.6*fem,
-                                color: Color(0xff263238),
-                              ),
-                            ),
-                          ),
-                        ),
-                        Positioned(
-                          // ellipse284ddx (28:1673)
-                          left: 196.4799804688*fem,
-                          top: 0*fem,
-                          child: Align(
-                            child: SizedBox(
-                              width: 174.44*fem,
-                              height: 191.27*fem,
-                              child: Image.asset(
-                                'assets/page-1/images/ellipse-284.png',
-                                width: 174.44*fem,
-                                height: 191.27*fem,
-                              ),
-                            ),
-                          ),
-                        ),
-                        Positioned(
-                          // ellipse287jgz (28:1889)
-                          left: 220.0832519531*fem,
-                          top: 41.3883056641*fem,
-                          child: Align(
-                            child: SizedBox(
-                              width: 164.9*fem,
-                              height: 156.77*fem,
-                              child: Image.asset(
-                                'assets/page-1/images/ellipse-287.png',
-                                width: 164.9*fem,
-                                height: 156.77*fem,
-                              ),
-                            ),
-                          ),
-                        ),
-                        Positioned(
-                          // group367RZp (28:1674)
-                          left: 0*fem,
-                          top: 61.2709960938*fem,
-                          child: Align(
-                            child: SizedBox(
-                              width: 199.68*fem,
-                              height: 178.94*fem,
-                              child: Image.asset(
-                                'assets/page-1/images/group-367.png',
-                                width: 199.68*fem,
-                                height: 178.94*fem,
-                              ),
-                            ),
-                          ),
-                        ),
-                        Positioned(
-                          // group380XMx (112:418)
-                          left: 43.4799804688*fem,
-                          top: 3*fem,
-                          child: Container(
-                            width: 280.52*fem,
-                            height: 55*fem,
-                            decoration: BoxDecoration (
-                              borderRadius: BorderRadius.circular(15*fem),
-                            ),
-                            child: Stack(
-                              children: [
-                                Positioned(
-                                  // rectangle114Sjp (112:419)
-                                  left: 0*fem,
-                                  top: 0*fem,
-                                  child: Align(
-                                    child: SizedBox(
-                                      width: 264*fem,
-                                      height: 55*fem,
-                                      child: TextButton(
-                                        onPressed: () {},
-                                        style: TextButton.styleFrom (
-                                          padding: EdgeInsets.zero,
-                                        ),
-                                        child: Container(
-                                          decoration: BoxDecoration (
-                                            borderRadius: BorderRadius.circular(15*fem),
-                                            color: Color(0xff2ba583),
-                                            boxShadow: [
-                                              BoxShadow(
-                                                color: Color(0x11000000),
-                                                offset: Offset(4*fem, 4*fem),
-                                                blurRadius: 10*fem,
+                                        import 'package:flutter/material.dart' as FontWeight;
+                                        import 'package:google_maps_flutter/google_maps_flutter.dart';
+
+                                        class Scene extends StatefulWidget {
+                                          @override
+                                          _SceneState createState() => _SceneState();
+                                        }
+
+                                        class _SceneState extends State<Scene> {
+                                          GoogleMapController? mapController;
+
+                                          void _onMapCreated(GoogleMapController controller) {
+                                            mapController = controller;
+                                          }
+
+                                          @override
+                                          Widget build(BuildContext context) {
+                                            return Scaffold(
+                                              body: GoogleMap(
+                                                onMapCreated: _onMapCreated,
+                                                initialCameraPosition: CameraPosition(
+                                                  target: LatLng(0, 0),
+                                                ),
                                               ),
-                                            ],
-                                          ),
-                                        ),
-                                      ),
+                                            );
+                                          }
+                                        }
                                     ),
                                   ),
                                 ),
@@ -490,7 +311,7 @@ class _SceneState extends State<Scene> {
                                           fontWeight: FontWeight.w700,
                                           height: 1.3333333333*ffem/fem,
                                           letterSpacing: 0.72*fem,
-                                          color: Color(0xffffffff),
+                                          color: const Color(0xffffffff),
                                         ),
                                       ),
                                     ),
@@ -541,7 +362,7 @@ class _SceneState extends State<Scene> {
                                     fontWeight: FontWeight.w500,
                                     height: 1.6*ffem/fem,
                                     letterSpacing: 0.3*fem,
-                                    color: Color(0xff2ba583),
+                                    color: const Color(0xff2ba583),
                                   ),
                                 ),
                               ),
@@ -556,7 +377,7 @@ class _SceneState extends State<Scene> {
                             style: TextButton.styleFrom (
                               padding: EdgeInsets.zero,
                             ),
-                            child: Container(
+                            child: SizedBox(
                               height: double.infinity,
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -582,7 +403,7 @@ class _SceneState extends State<Scene> {
                                       fontWeight: FontWeight.w500,
                                       height: 1.6*ffem/fem,
                                       letterSpacing: 0.3*fem,
-                                      color: Color(0xff777b84),
+                                      color: const Color(0xff777b84),
                                     ),
                                   ),
                                 ],
@@ -598,7 +419,7 @@ class _SceneState extends State<Scene> {
                             style: TextButton.styleFrom (
                               padding: EdgeInsets.zero,
                             ),
-                            child: Container(
+                            child: SizedBox(
                               height: double.infinity,
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -624,7 +445,7 @@ class _SceneState extends State<Scene> {
                                       fontWeight: FontWeight.w500,
                                       height: 1.6*ffem/fem,
                                       letterSpacing: 0.3*fem,
-                                      color: Color(0xff777b84),
+                                      color: const Color(0xff777b84),
                                     ),
                                   ),
                                 ],
@@ -666,7 +487,7 @@ class _SceneState extends State<Scene> {
                                       fontWeight: FontWeight.w500,
                                       height: 1.6*ffem/fem,
                                       letterSpacing: 0.3*fem,
-                                      color: Color(0xff777b84),
+                                      color: const Color(0xff777b84),
                                     ),
                                   ),
                                 ],
@@ -682,7 +503,7 @@ class _SceneState extends State<Scene> {
                             style: TextButton.styleFrom (
                               padding: EdgeInsets.zero,
                             ),
-                            child: Container(
+                            child: SizedBox(
                               width: 30*fem,
                               height: 43*fem,
                               child: Column(
@@ -699,7 +520,7 @@ class _SceneState extends State<Scene> {
                                       height: 24*fem,
                                     ),
                                   ),
-                                  Container(
+                                  SizedBox(
                                     // profilecX8 (28:1224)
                                     width: double.infinity,
                                     child: Text(
@@ -711,7 +532,7 @@ class _SceneState extends State<Scene> {
                                         fontWeight: FontWeight.w500,
                                         height: 1.6*ffem/fem,
                                         letterSpacing: 0.3*fem,
-                                        color: Color(0xff777b84),
+                                        color: const Color(0xff777b84),
                                       ),
                                     ),
                                   ),
@@ -730,15 +551,13 @@ class _SceneState extends State<Scene> {
                     height: 5*fem,
                     decoration: BoxDecoration (
                       borderRadius: BorderRadius.circular(100*fem),
-                      color: Color(0xffffffff),
+                      color: const Color(0xffffffff),
                     ),
                   ),
                 ],
               ),
             ),
           ],
-        ),
-      ),
-          );
+        );
   }
 }

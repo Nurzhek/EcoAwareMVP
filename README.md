@@ -10,7 +10,7 @@ To run this project, you need to:
 ```bash
 dart pub get
 ```
-* Run the following command in terminal:
+* Run the app by following command in terminal:
 ```bash
 flutter run
 ```

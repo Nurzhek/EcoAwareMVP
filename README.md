@@ -10,6 +10,7 @@ To run this project, you need to install Flutter framework to its latest version
 flutter run
 ```
 
+## Visuals
 ![tg_image_327599743](https://github.com/Nurzhek/EcoAwareMVP/assets/99636082/ad803d07-c695-40ce-90d7-3f712089175f)
 ![Profile](https://github.com/Nurzhek/EcoAwareMVP/assets/99636082/9b1969fb-59b5-4efd-95dd-0c798d694ee1)
 ![Profile (3)](https://github.com/Nurzhek/EcoAwareMVP/assets/99636082/bc2a9204-e921-4c6e-843f-8e0caa4ddd2e)
